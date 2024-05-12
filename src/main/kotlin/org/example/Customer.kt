@@ -26,12 +26,12 @@ class Customer(val monthlyFee: Double,
         }
     }
 
-    fun isLocal(destination: Customer): Boolean {
+    private fun isLocal(destination: Customer): Boolean {
         return (nationalId == destination.nationalId) and
                 (localId == destination.localId)
     }
 
-    fun isNational(destination: Customer): Boolean {
+    private fun isNational(destination: Customer): Boolean {
         return (nationalId == destination.nationalId) and
                 (localId != destination.localId)
     }

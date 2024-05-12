@@ -12,10 +12,6 @@ fun main(args: Array<String>) {
     leandro.makeCall(10, 10, DayType.MONDAY, pedro)
     leandro.makeCall(10, 10, DayType.MONDAY, joao)
 
-    println("Local calls: ${leandro.localCalls.size}")
-    println()
-    println("National and international phone calls: ${leandro.nationalAndInternationalCalls.size}")
-    println()
     val receipt = Billing.createReceipt(leandro)
 
     println(receipt.toString())

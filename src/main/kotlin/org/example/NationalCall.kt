@@ -13,8 +13,8 @@ class NationalCall (
         return calculateNationalCostTo(destination.localId) * duration
     }
 
-    fun calculateNationalCostTo(nationalDestination : Int) : Double {
-        // The cost of a national phone call to some national destination is hard-coded to 0.70 per minute to simplify.
+    private fun calculateNationalCostTo(nationalDestination : Int) : Double {
+        // The cost of a national phone call to some national destination is hard-coded to 0.70 per minute  for simplicity.
         return 0.70
     }
 
